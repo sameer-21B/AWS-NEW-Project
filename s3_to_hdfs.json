@@ -1,0 +1,9 @@
+[
+        {
+        "Name":"S3DistCp step",
+        "Args":["s3-dist-cp","--s3Endpoint=s3.ap-south-1.amazonaws.com","--src=s3://emr-hdfs-bkp/ecom_data_fact/","--dest=hdfs:///user/hadoop/"],
+        "ActionOnFailure":"CONTINUE",
+        "Type":"CUSTOM_JAR",
+        "Jar":"command-runner.jar"        
+        }
+]
